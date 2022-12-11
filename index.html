@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Shopping Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&display=swap" rel="stylesheet">
+
+<link href="style.css" rel="stylesheet">
+    
+        
+           
+           <script type = "text/javascript">
+               function displayNextImage() {
+                   x = (x === images.length - 1) ? 0 : x + 1;
+                   document.getElementById("img").src = images[x];
+               }
+     
+               function displayPreviousImage() {
+                   x = (x <= 0) ? images.length - 1 : x - 1;
+                   document.getElementById("img").src = images[x];
+               }
+     
+               function startTimer() {
+                   setInterval(displayNextImage, 3000);
+               }
+     
+               var images = [], x = -1;
+               images[0] = "Dog1.jpg";
+               images[1] = "do2.jpg";
+               images[2] = "dog3.jpg";
+               images[3] = "Dog4.jpg";
+           </script>
+        </head>
+     
+<body onload = "startTimer()" background="">
+
+ 
+<br>
+<center>
+<div id="Head">
+   <h1 class="Header"><b style="color:black;">The 8th</b> <b style="color:rgb(217, 55, 82);">Heaven</b></h1> 
+   <img id="Logo" src="Logo.jpg">
+</div>
+<br><br>
+<div id="Main"><br><br>
+    <img id="img" src="">
+    <h3 id="text">An <b style="color:rgb(180, 68, 86);">egg</b> is an organic vessel grown by an animal to carry a <u>
+        possibly fertilized egg cell</u> (a zygote) and to incubate from it an embryo 
+        within the egg until the embryo 
+        has become an animal fetus that can survive on its own, at which point the animal hatches.<br>
+        <br>Most <u>arthropods</u> such as <b style="color:rgb(180, 68, 86);">insects</b>, <b style="color:rgb(180, 68, 86);">vertebrates</b> (excluding live-bearing mammals), 
+        and <b style="color:rgb(180, 68, 86);">mollusks</b> lay eggs, 
+        although some, such as scorpions, do not.
+    </h3> &nbsp; 
+    <br><br><br><br>
+<div id="bar">
+    <a id="Men" href=""><b>Men&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a  id="Women" href=""><b>Women&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="Smallmen" href=""><b>Kids&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="Hoomen" href=""><b>Pets&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a id="Trend" href=""><b>Trending</b></a>
+</div>
+ </div>
+
+ </center> 
+
+</body>
+</html>
+
